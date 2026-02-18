@@ -1,0 +1,204 @@
+.room {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100vh;
+    padding: 10px 10px 20px;
+}
+
+.roomSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.languageFieldWrapper {
+    padding: 2px 6px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.languageField {
+    padding: 6px 10px;
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.roomCodeEditor {
+    flex: 1;
+}
+
+.roomSidebarCopyBtn {
+    font-size: 75%;
+    font-weight: bold;
+    padding: 8px 15px;
+    color: white;
+    background-color: #ffdd00;
+    border: 1px solid #ffdd00;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.45s ease-in-out 0.05s;
+}
+.roomSidebarCopyBtn:hover {
+    color: black;
+    background-color: white;
+}
+
+.roomSidebarBtn {
+    font-size: 75%;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.45s ease-in-out 0.05s;
+}
+.roomSidebarBtn:hover {
+    color: white;
+    background-color: black;
+}
+
+.runOutput {
+    font-family: monospace;
+    font-size: 13px;
+}
+
+/* New classic layout styles */
+.room {
+    display: flex;
+    gap: 16px;
+    min-height: 100vh;
+    padding: 16px;
+    background: #f6f6f6;
+}
+
+.roomSidebar {
+    width: 260px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.roomMain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.roomHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.toolbarLeft,
+.toolbarRight {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: #ffdd00;
+    border-color: #ffdd00;
+    font-weight: 700;
+}
+
+.roomCodeEditor {
+    flex: 1;
+    min-height: 420px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.outputPanel {
+    background: #111;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.outputTitle {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.sidebarFooter {
+    margin-top: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.roomSidebarUsersWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.roomSidebarUsers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.roomSidebarUsersEach {
+    display: grid;
+    justify-items: center;
+}
+
+.roomSidebarUsersEachAvatar {
+    color: white;
+    border-radius: 5px;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 5px;
+    font-size: small;
+
+    display: grid;
+    place-items: center;
+}
+
+.roomSidebarUsersEachName {
+    font-weight: bold;
+    font-size: small;
+}
+
+@media screen and (min-width: 991px) {
+    .room {
+        flex-direction: row;
+    }
+
+    .roomSidebar {
+        flex: 0.25;
+    }
+
+    .roomSidebar > *:nth-child(2) {
+        margin-top: auto;
+    }
+
+    .roomCodeEditor {
+        flex: 0.75;
+    }
+}
